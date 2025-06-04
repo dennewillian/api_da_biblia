@@ -1,34 +1,24 @@
-export const personagens = [
-    {
-        id: 1, 
-        nome: "Sadraque",
-        role: "amigo de Daniel",
-        status: "sobreviveu a fornalha ardente",
-        descricao: "Recusou adorar a estátua de Nabucodonosor."
-    },
-    {
-        id: 2,
-        nome: "Mesaque",
-        role: "Amigo de Daniel",
-        Status: "Sobreviveu a fornalha ardente",
-        descricao: "Recusou adorar a estátua de Nabucodonosor."
-    },
-    
-    {
-        id: 3,
-        nome: "Abednego",
-        role: "Amigo de Daniel",
-        status: "Sobreviveu a fornalha ardente",
-        "descrição": "Recusou adorar a estátua de Nabucodonosor."
-    },
-    {
-        id: 4,
-        nome: "Nabucodonosor",
-        role: "Rei da Babilônia",
-        status: "Precenciou o milagre",
-        descricao: "Mandou jogar os tres amigos de Daniel na fornalha ardente."
-    }, 
-    {
+let idCounter = 1;
 
-    }
-]
+const personagens = [
+  {
+    id: idCounter++,
+    nome: "Sadraque",
+    idade: null,
+    descricao: "Um dos jovens hebreus levados para a Babilônia. Recusou-se a adorar a estátua de ouro de Nabucodonosor."
+  },
+  {
+    id: idCounter++,
+    nome: "Mesaque",
+    idade: null,
+    descricao: "Amigo de Sadraque e Abede-Nego. Permaneceu fiel a Deus na Babilônia."
+  },
+  {
+    id: idCounter++,
+    nome: "Abede-Nego",
+    idade: null,
+    descricao: "Jovem hebreu que, junto com seus amigos, enfrentou a fornalha ardente por sua fé."
+  }
+];
+
+module.exports = { personagens, idCounter };
